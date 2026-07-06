@@ -1,0 +1,148 @@
+.header {
+  background-color: var(--white);
+  box-shadow: 0 2px 5px var(--lynx-grey);
+  color: var(--black);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header h2 {
+  margin-left: 1rem;
+  font-size: 2.8rem;
+}
+
+.header span {
+  color: var(--brand-color);
+}
+
+.header input {
+  border: 1px solid var(--black);
+  width: 100%;
+}
+
+.badgeContainer {
+  position: relative;
+}
+
+.badgeContainer .badge {
+  display: inline-block;
+  text-align: center;
+  min-width: 1.6rem;
+  font-size: 1.5rem;
+  padding: 0 2px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--brand-color);
+  color: var(--white);
+  top: -8px;
+  left: 6px;
+}
+
+.searchContainer {
+  position: relative;
+  width: 35%;
+  margin-left: auto;
+  z-index: 3;
+}
+
+.searchList {
+  position: absolute;
+  list-style: none;
+  left: 0;
+  right: 0;
+  font-size: var(--text-md);
+  background-color: var(--white);
+  border: 1px solid;
+  max-height: 32rem;
+  color: var(--brand-color);
+  overflow-y: auto;
+}
+
+.searchList > li {
+  padding: 5px;
+  border: 1px solid var(--lynx-grey);
+  cursor: pointer;
+}
+
+.searchList > li:hover {
+  background-color: var(--lynx-grey);
+}
+
+.menuBtn {
+  display: none;
+}
+
+@media only screen and (max-width: 980px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .header h2 {
+    margin: 0;
+  }
+
+  .menuBtn {
+    font-size: var(--text-lg);
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    justify-self: flex-end;
+  }
+
+  .nav {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 7.2rem;
+    padding: 1.6rem;
+    z-index: 2;
+    background-color: var(--white);
+  }
+
+  .header .active {
+    display: block;
+  }
+
+  .backdrop {
+    background-color: var(--black);
+    opacity: 0.7;
+    position: fixed;
+    top: 7.2rem;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .searchActive {
+    top: 11rem;
+  }
+
+  .nav > ul {
+    flex-direction: column;
+  }
+
+  .nav li {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .searchContainer {
+    order: 3;
+    width: 100%;
+    margin: 8px 0 0;
+  }
+
+  .search {
+    display: block;
+    margin: 0;
+  }
+}

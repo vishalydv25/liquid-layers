@@ -1,0 +1,98 @@
+.pgTitle {
+	margin-top: 9.6rem;
+	text-align: center;
+}
+
+.backBtnContainer {
+	max-width: 1024px;
+	margin: auto;
+	padding: 0 2.4rem;
+}
+
+.backBtnContainer button {
+	font-size: var(--text-md);
+	color: var(--info-color);
+	text-decoration: underline;
+}
+
+.checkoutPg {
+	display: flex;
+	max-width: 1024px;
+	padding: 0 2.4rem;
+	margin: 2.4rem auto;
+	gap: 2.4rem;
+}
+
+.addressContainer {
+	padding: 1.6rem;
+	border: 1px solid;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.6rem;
+}
+
+.addressContainer > label {
+	display: flex;
+	flex-direction: column;
+	font-size: var(--text-md);
+	margin-left: 8px;
+	user-select: none;
+}
+
+.userName {
+	font-weight: 700;
+}
+
+.userAddress {
+	margin: 4px 0;
+}
+
+.summaryContainer {
+	width: 50%;
+	font-size: var(--text-md);
+}
+
+.flexItem {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.flexItem:first-of-type {
+	margin-top: 1.6rem;
+}
+
+.topBorder {
+	padding-top: 10px;
+	border-top: 1px solid var(--grey);
+}
+
+.deliveryAddress {
+	font-size: var(--text-md);
+	display: flex;
+	flex-direction: column;
+	margin: 1.6rem 0;
+}
+
+.btn {
+	background-color: var(--brand-color);
+}
+
+.btn:disabled {
+	opacity: 0.5;
+}
+
+.defaultBtn {
+	margin-top: 8rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.checkoutPg {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.summaryContainer {
+		width: 100%;
+	}
+}

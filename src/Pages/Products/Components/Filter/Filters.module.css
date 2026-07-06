@@ -1,0 +1,74 @@
+.plAside {
+	height: calc(100vh - 10.6rem);
+	position: sticky;
+	top: 9.6rem;
+	width: 20rem;
+	overflow-y: auto;
+	margin: 4px;
+	padding-bottom: 10px;
+}
+
+.asideHeading {
+	display: flex;
+	justify-content: space-between;
+}
+
+.asideHeading button {
+	color: var(--info-color);
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+.asidePrice {
+	margin: 2.4rem 0;
+}
+
+.currentPrice {
+	display: block;
+	margin-top: 8px;
+	font-size: 1.2rem;
+}
+
+.asidePrice label,
+.asideGenre span,
+.asideRating span {
+	display: block;
+	font-size: 1.6rem;
+	margin-bottom: 0.8rem;
+}
+
+.asidePrice input {
+	width: 90%;
+
+	margin: auto;
+}
+
+.checkboxContainer,
+.radioContainer {
+	margin: 0.8rem 4px;
+}
+
+.asideRating > span {
+	margin-top: 2.4rem;
+}
+
+@media only screen and (max-width: 980px) {
+	.plAside {
+		display: none;
+		background-color: var(--lynx-white);
+		position: fixed;
+		top: auto;
+		bottom: 5.7rem;
+		right: 0;
+		left: 0;
+		width: 100%;
+		z-index: 5;
+		padding: 2.4rem 4rem;
+		height: 32rem;
+		overflow: auto;
+	}
+
+	.active {
+		display: block;
+	}
+}

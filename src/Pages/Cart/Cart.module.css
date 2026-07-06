@@ -1,0 +1,52 @@
+.cartMain {
+	margin: 9.6rem auto 7.2rem;
+	width: max-content;
+}
+
+.cartHeading {
+	font-weight: 400;
+	margin-bottom: 0.8rem;
+}
+
+.cartHeading + small {
+	font-size: 1.4rem;
+	color: var(--grey);
+}
+
+.cartContainer {
+	display: flex;
+	margin-top: 1.6rem;
+}
+
+.emptyCartContainer {
+	width: 100%;
+	height: calc(100vh - 16.8rem);
+	text-align: center;
+}
+
+.emptyMsgTitle {
+	display: block;
+	margin-top: 1.6rem;
+	font-size: var(--text-xl);
+}
+
+.emptyCartContainer img {
+	max-height: 44rem;
+	object-fit: contain;
+}
+
+.emptyCartContainer a {
+	background-color: var(--info-color);
+	width: fit-content;
+	margin: 2.4rem auto 0;
+	padding: 8px 1.6rem;
+	font-size: var(--text-md);
+	display: block;
+}
+
+@media only screen and (max-width: 820px) {
+	.cartContainer {
+		flex-direction: column;
+		align-items: center;
+	}
+}

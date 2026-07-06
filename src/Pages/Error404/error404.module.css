@@ -1,0 +1,27 @@
+.errorPage {
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	height: 100vh;
+	background-color: var(--white);
+}
+
+.errorPageTitle {
+	padding: 3.2rem 0 1.6rem;
+	display: block;
+	font-size: var(--text-xl);
+}
+
+.errorPage img {
+	max-height: 48rem;
+	object-fit: contain;
+}
+
+.errorPage a {
+	width: fit-content;
+	font-size: var(--text-md);
+	margin: auto;
+	display: block;
+	background-color: var(--info-color);
+	padding: 8px 1.6rem;
+}

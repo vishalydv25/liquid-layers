@@ -1,0 +1,43 @@
+.categoryList {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.categoryItem {
+  display: block;
+  margin: 0 1.6rem 1.6rem;
+}
+
+.categoryItem img {
+  display: block;
+  height: 24rem;
+  width: 24rem;
+  object-fit: cover;
+}
+
+.categoryItem > span {
+  display: block;
+  font-size: var(--text-md);
+  margin-top: 1.6rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1280px) {
+  .categoryItem {
+    margin: 0 2.4rem 1.6rem;
+  }
+
+  .categoryItem img {
+    height: 32rem;
+    width: 32rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .categoryList {
+    justify-content: center;
+  }
+}

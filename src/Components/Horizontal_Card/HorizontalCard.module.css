@@ -1,0 +1,59 @@
+.card:first-of-type {
+	margin-top: 0;
+}
+
+.card {
+	margin: 3.2rem 0;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.card:hover {
+	box-shadow: none;
+}
+
+.card h4 {
+	font-weight: 700;
+	margin-top: 0;
+}
+
+.cardImg {
+	border-radius: 0;
+}
+
+.card .content {
+	padding: 0 0 0 1.6rem;
+	justify-content: flex-start;
+}
+
+.content p:first-of-type {
+	padding: 0;
+}
+
+.cardDiscount {
+	font-size: 12px;
+}
+
+.card .actionLink {
+	border: 2px solid var(--brand-color);
+	background-color: var(--white);
+	color: var(--brand-color);
+	transition: color 0.2s ease-in, background-color 0.2s ease-in;
+	min-width: 15rem;
+	text-align: center;
+}
+
+.card .actionLink:hover {
+	background-color: var(--brand-color);
+	color: var(--white);
+	transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+button[disabled] {
+	cursor: not-allowed;
+}
+
+.deleteBtn {
+	font-size: var(--text-md);
+	margin-left: 1.6rem;
+}
