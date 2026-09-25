@@ -1,0 +1,129 @@
+.plPg {
+  display: flex;
+  margin: 9.6rem 1.6rem 7.2rem;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--black);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.productList {
+  flex-grow: 1;
+  margin-left: 3.2rem;
+  display: grid;
+  grid-gap: 2.4rem 1.6rem;
+  grid-template-columns: repeat(auto-fit, 28rem);
+  justify-items: center;
+  align-items: baseline;
+  list-style: none;
+}
+
+.plBreadcrumbContainer {
+  grid-column: 1/-1;
+  font-size: var(--text-md);
+  justify-self: flex-start;
+}
+
+.plBreadcrumbContainer > div {
+  display: inline-block;
+}
+
+.plBreadcrumbContainer > span {
+  margin-left: 2.4rem;
+}
+
+.plBreadcrumbContainer .currentPg {
+  color: var(--info-color);
+}
+
+.filterFooter {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.filterFooter button {
+  border-top: 1px solid var(--grey);
+  color: var(--black);
+  font-size: var(--text-md);
+  background-color: var(--lynx-white);
+  width: 100%;
+  padding: 1.6rem 4.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filterFooter button:hover,
+.filterFooter button:active {
+  opacity: 1;
+}
+
+.filterFooter i {
+  font-size: var(--text-lg);
+}
+
+.pgButtonContainer {
+  grid-column: 1/-1;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.pgButtonContainer > button {
+  font-size: var(--text-md);
+  padding: 6px 10px;
+  border: 1px solid;
+}
+
+.pgActiveBtn {
+  background-color: var(--lynx-grey);
+}
+
+@media only screen and (max-width: 980px) {
+  .productList {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .plBreadcrumbContainer {
+    justify-self: center;
+  }
+
+  .plBreadcrumbContainer > div {
+    text-align: center;
+    display: block;
+  }
+
+  .plBreadcrumbContainer > span {
+    margin: 0;
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  .filterFooter {
+    display: flex;
+  }
+
+  .active {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1750px) {
+  .plPg {
+    width: 90%;
+    margin: 9.6rem auto 7.2rem;
+  }
+}

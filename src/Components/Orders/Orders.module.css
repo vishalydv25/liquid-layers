@@ -1,0 +1,44 @@
+.orderContainer {
+	max-width: 50.4rem;
+	font-size: var(--text-md);
+	margin: auto;
+}
+
+.orderContainer > article {
+	border: 1px solid var(--grey);
+	padding: 1.6rem 2.4rem;
+	margin: 2.4rem 0;
+}
+
+.orderId {
+	font-size: var(--text-md);
+}
+
+.orderPrice {
+	display: flex;
+	flex-direction: column;
+	font-size: var(--text-md);
+	margin: 8px 0;
+}
+
+.priceTitle {
+	font-weight: 700;
+}
+
+.productCard {
+	display: flex;
+	font-size: var(--text-md);
+	gap: 2.4rem;
+	margin: 10px 0;
+	outline: 2px solid var(--grey);
+}
+
+.productCard > img {
+	width: 9.6rem;
+	height: 9.6rem;
+	display: block;
+}
+
+.productCard > span {
+	margin-top: 10px;
+}

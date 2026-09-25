@@ -1,0 +1,48 @@
+.container {
+	margin: 2.4rem 0;
+	display: grid;
+	gap: 2.4rem;
+	grid-template-columns: repeat(auto-fit, 28rem);
+	justify-content: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+}
+
+.card,
+.newBtn {
+	padding: 1.4rem 1.6rem;
+	border-radius: 5px;
+	border: 1px solid var(--grey);
+}
+
+.newBtn {
+	font-size: var(--text-lg);
+	min-height: 214px;
+}
+
+.card p,
+.card span {
+	margin: 10px 0;
+}
+
+.card span {
+	font-size: var(--text-md);
+	display: block;
+}
+
+.btnContainer {
+	margin-top: auto;
+	font-size: var(--text-md);
+	text-align: right;
+}
+
+.btnContainer button {
+	font-size: inherit;
+}
+
+.btnContainer button:hover {
+	text-decoration: underline;
+}

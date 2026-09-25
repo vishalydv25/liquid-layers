@@ -1,0 +1,39 @@
+.backdrop {
+	left: 0;
+	cursor: auto;
+}
+
+.modal {
+	background-color: var(--white);
+	padding: 2.4rem 1.6rem;
+	display: flex;
+	gap: 2.4rem;
+	flex-direction: column;
+	max-width: 40rem;
+	width: 100%;
+}
+
+.formTitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.formTitle > button {
+	font-size: var(--text-lg);
+}
+
+.modal > input {
+	font-size: var(--text-md);
+	padding: 9px;
+}
+
+.btnContainer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1.6rem;
+}
+
+.hide {
+	display: none;
+}

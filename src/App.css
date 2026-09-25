@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --brand-color: #0ca3d1;
+  --white: #fff;
+  --toastify-toast-min-height: 5.6rem;
+  --toastify-color-info: var(--info-color);
+}
+* {
+  box-sizing: border-box;
+}
+.Toastify__toast-container--bottom-right {
+  font-size: var(--text-md);
+}
+body {
+  font-family: "Poppins", "Open Sans", sans-serif;
+  background-color: whitesmoke;
+}

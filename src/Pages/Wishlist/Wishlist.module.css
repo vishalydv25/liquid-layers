@@ -1,0 +1,51 @@
+.wlPg {
+	width: 90%;
+	margin: 9.6rem auto 7.2rem;
+}
+
+.wlHeading {
+	font-weight: 400;
+	margin-bottom: 0.8rem;
+}
+
+.wlHeading + small {
+	font-size: 1.4rem;
+	color: var(--grey);
+}
+
+.productList {
+	margin: 2.4rem 0;
+	display: grid;
+	grid-gap: 2.4rem 1.6rem;
+	grid-template-columns: repeat(auto-fit, 28rem);
+}
+
+.productList i {
+	transform: translateY(1px);
+}
+
+.emptyCartContainer {
+	width: 100%;
+	height: calc(100vh - 16.8rem);
+	text-align: center;
+}
+
+.emptyMsgTitle {
+	display: block;
+	margin-top: 1.6rem;
+	font-size: var(--text-xl);
+}
+
+.emptyCartContainer img {
+	max-height: 44rem;
+	object-fit: contain;
+}
+
+.emptyCartContainer a {
+	background-color: var(--info-color);
+	width: fit-content;
+	margin: 2.4rem auto 0;
+	padding: 8px 1.6rem;
+	font-size: var(--text-md);
+	display: block;
+}
